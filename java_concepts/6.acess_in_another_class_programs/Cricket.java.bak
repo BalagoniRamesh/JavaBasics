@@ -1,0 +1,28 @@
+class Cricket
+{
+	public static void play() 
+	{
+		System.out.println("play 2020 match");
+	}
+	public int replay() 
+	{
+		System.out.println("watch again");
+	}
+}
+	
+class MainClass
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		Cricket.play();
+		new Cricket().replay();
+		System.out.println("main ends...");
+	}
+}
+
+/*
+Error: Main method not found in class Demo, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+*/

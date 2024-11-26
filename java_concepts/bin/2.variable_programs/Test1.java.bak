@@ -1,0 +1,21 @@
+class Test1
+{
+	public static int i;
+	public static void main(String[] args)
+	{
+		System.out.println("main starts...");
+		System.out.println(i);
+		System.out.println("main ends....");
+	}
+	
+}
+
+/*
+
+D:\java_programs\variable_programs\Test1.java:7: error: non-static variable i cannot be referenced from a static context
+                System.out.println(i);
+                                   ^
+1 error
+
+
+*/

@@ -1,0 +1,8 @@
+interface Sample123
+{
+	public  Sample123()
+	{
+		System.out.println("test completed");
+	}
+}
+

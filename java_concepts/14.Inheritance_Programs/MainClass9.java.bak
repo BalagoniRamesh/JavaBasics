@@ -1,0 +1,27 @@
+class MainClass9
+{ 
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		Developer d1 = new Developer("IBM201", "Raja", 31000.3, "web");
+		Testing t1 = new Testing("IBM403", "Abhi", 26000.4, "manual");
+		d1.developerInfo();
+		t1.testEngDetails();
+		System.out.println("main ends...");
+	}
+}
+/*
+main starts...
+***********************
+id : IBM201
+Name : Raja
+Salary : 31000.3
+Language : web
+***********************
+id : IBM403
+Name : Abhi
+Salary : 26000.4
+Type Of testing : manual
+main ends...
+*/

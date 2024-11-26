@@ -1,0 +1,19 @@
+/* 11 ANS //Non static  Refer Imp2 question for below program */
+class MainClass4a
+{
+	public final int k = 10;   //Non static 
+
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		MainClass4a rv = new MainClass4a();
+		System.out.println(rv.k);
+		System.out.println("main ends...");
+	}
+}
+/*
+D:\java_programs\finalvariable\MainClass4a.java:10: error: cannot assign a value to final variable k
+                rv.k = 20;
+                  ^
+1 error               
+*/

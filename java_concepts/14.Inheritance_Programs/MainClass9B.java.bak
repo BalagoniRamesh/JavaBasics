@@ -1,0 +1,58 @@
+class Software
+{
+	String id;
+	String name;
+	double salary;
+	String lang;
+	//String typeOfTesting;
+	public void engineer1(String id, String name, double salary, String lang)
+	{
+		System.out.println("***********************");
+		System.out.println("id : "+id);
+		System.out.println("Name : "+name);
+		System.out.println("Salary : "+salary);
+		System.out.println("Language : "+lang);
+	}
+	/*public void engineer2(String id, String name, double salary, String typeOfTesting)
+	{
+		System.out.println("***********************");
+		System.out.println("id : "+id);
+		System.out.println("Name : "+name);
+		System.out.println("Salary : "+salary);
+		System.out.println("Type Of testing : "+typeOfTesting);
+	}*/
+}
+
+class Developer extends Software
+{
+}
+class Testing extends Software
+{
+}
+class MainClass9B
+{ 
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		Developer d1 = new Developer("IBM201", "Raja", 31000.3, "web");
+		Testing t1 = new Testing("IBM403", "Abhi", 26000.4, "manual");
+		d1.engineer1();
+		t1.engineer2();
+		System.out.println("main ends...");
+	}
+}
+/*
+main starts...
+***********************
+id : IBM201
+Name : Raja
+Salary : 31000.3
+Language : web
+***********************
+id : IBM403
+Name : Abhi
+Salary : 26000.4
+Type Of testing : manual
+main ends...
+*/

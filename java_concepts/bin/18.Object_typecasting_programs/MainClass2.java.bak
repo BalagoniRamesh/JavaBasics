@@ -1,0 +1,55 @@
+class Father
+{
+	public void home()
+	{
+		System.out.println("home color blue"); 
+	}
+}
+class You extends Father
+{
+	public void home()
+	{
+		System.out.println("home color red"); 
+	}
+}
+class MainClass2
+{ 
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		Father f1 =(Father) new You();
+		f1.home();
+		System.out.println("main ends...");
+	}
+}
+/*
+main starts...
+use wheels
+main ends... 
+class Car
+{
+	public void move()
+	{
+		System.out.println("use wings"); 
+	}
+}
+class Bike extends Car
+{
+	public void move()
+	{
+		System.out.println("use wheels"); 
+	}
+}
+class MainClass2
+{ 
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		Car a1 =(Car) new Bike();
+		a1.move();
+		System.out.println("main ends...");
+	}
+}
+*/

@@ -1,0 +1,50 @@
+class Circle
+{
+	public void rotate()
+	{
+		System.out.println("clock-wise");
+	}
+}
+class Rectangle
+{
+	public void rotate()
+	{
+		System.out.println("clock-wise");
+	}
+}
+class Triangle
+{
+	public void rotate()
+	{
+		System.out.println("clock-wise");
+	}
+}
+class MainClass8.1
+{ 
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		F f1 = new F();
+		F f2 = new F();
+		F f3 = new F();
+		F f4 = new F();
+		f1.print();
+		f2.print();
+		f3.print();
+		f4.print();
+		System.out.println("main ends...");
+	}
+}
+/*
+main starts...
+Shared var a: 10
+Inherited var b: 10
+Shared var a: 10
+Inherited var b: 10
+Shared var a: 10
+Inherited var b: 10
+Shared var a: 10
+Inherited var b: 10
+main ends...
+*/

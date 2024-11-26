@@ -1,0 +1,38 @@
+class StudentMainClass
+{
+
+	public static void main(String[] args)
+	{
+		System.out.println("main starts...");
+		Student s1 = new Student("Abhi", 78.5, 56.7, 62.3);
+		Student s2 = new Student("Raj", 87.4, 42.1, 83.2);
+		Student s3 = new Student("Vijay", 76.3, 64.1, 76.4, 64.3);		
+		s1.display();		
+		s2.display();
+		s3.display();
+		System.out.println("main ends...");
+	}
+}
+/*
+main starts...
+********************
+Name: Abhi
+tenth percentage: 78.5%
+inter percentage: 56.7%
+degree percentage: 62.3%
+********************
+********************
+Name: Raj
+tenth percentage: 87.4%
+inter percentage: 42.1%
+degree percentage: 83.2%
+********************
+********************
+Name: Vijay
+tenth percentage: 76.3%
+inter percentage: 64.1%
+degree percentage: 76.4%
+masters percentage: 64.3%
+********************
+main ends...
+*/

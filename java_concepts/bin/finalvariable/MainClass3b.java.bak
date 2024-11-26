@@ -1,0 +1,21 @@
+/* 10 ANSRefer Imp2 question for below program */
+class MainClass3b
+{
+	public final static int z;
+	public MainClass3b()
+	{
+		z=10;
+	}
+
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		System.out.println(z);
+		System.out.println("main ends...");
+	}
+}
+/*
+main starts...
+10
+main ends...                 
+*/

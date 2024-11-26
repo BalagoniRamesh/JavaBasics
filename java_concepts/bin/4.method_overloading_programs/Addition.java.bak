@@ -1,0 +1,42 @@
+class Addition 
+{
+	public static void add(int i,int j) 
+	{
+		System.out.println("Addition of");
+		System.out.println("i: " +i);
+		System.out.println("j: " +j);
+		System.out.println("i+j= " +(i+j));
+	}
+	public static void add(double i, double j) 
+	{
+		System.out.println("Addition of");
+		System.out.println("i: " +i);
+		System.out.println("j: " +j);
+		System.out.println("i+j=" +(i+j));
+	}
+	public static void add(int i,int j, int k) 
+	{
+		System.out.println("Addition of");
+		System.out.println("i: " +i);
+		System.out.println("j: " +j);
+		System.out.println("k: " +k);
+		System.out.println("i+j+k=" +(i+j+k));
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		add(6, 4);
+		add(7.4, 1.2);
+		
+		add(6, 4,8);
+		System.out.println("main ends...");
+	}
+}
+/*
+main starts...
+Inside move method with int,int,arg
+Inside move method with double,double,arg
+Inside move method with int,int,int arg
+Inside move method with double, int arg
+main ends...
+*/

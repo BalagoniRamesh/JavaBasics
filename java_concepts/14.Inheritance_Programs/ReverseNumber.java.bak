@@ -1,0 +1,27 @@
+import java.util. Scanner;
+class ReverseNumber
+{
+    public static void main (String[] args)
+    {
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Enter the Number");
+	int num = Scan.nextInt();
+	int backup = num;
+	int lastdigit = 0;
+	int reverse = 0;
+	while(num!=0)
+	{
+	lastdigit = num%10;
+	reverse = reverse*10+lastdigit;
+	num = num/10;
+	}
+	if(reverse == backup)
+	{
+	  System.out.println("Given Number is Reverse number"+reverse);
+	}
+	else
+	    {
+		System.out.println("Given Number is Not a Reverse number"+reverse);
+	    }
+     }
+}

@@ -1,0 +1,39 @@
+abstract class test1
+	{
+		abstract public void test1();	
+	}
+interface test2
+	{
+		public void test2();	
+	}
+
+class Demo extends test1 implements test2 
+{
+	public void test1()
+	{
+		System.out.println("test1");
+	}
+	public void test2()
+	{
+		System.out.println("test2");
+	}
+	
+}
+class MainClass
+{ 	
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		Demo rv = new Demo();		
+		rv.test1();
+		rv.test2();
+		System.out.println("main ends...");
+	}
+}
+
+/*
+main starts...
+test13 completed
+test14 completed
+main ends...
+*/

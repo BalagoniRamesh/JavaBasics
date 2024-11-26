@@ -1,0 +1,67 @@
+class Employee 
+{
+	public int id;
+	public String name;
+	public double salary;
+	public double yoe;
+
+	public Employee(int id,String name, double salary)
+	{
+		this.id=id;
+		this.name=name;
+		this.salary=salary;
+	}
+	public Employee(int id,String name, double salary, double yoe)
+	{
+		this(id, name, salary);
+		this.yoe = yoe;
+	}
+	public void displayFresherDetails()
+	{
+		System.out.println("id: "+id);
+		System.out.println("name: "+name);
+		System.out.println("salary: "+salary);
+	}
+	public void displayExpDetails()
+	{
+		displayFresherDetails();
+		System.out.println("Years of Exp : "+yoe);
+	}
+}
+
+class EmployeeMainClass
+{
+
+	public static void main(String[] args)
+	{
+		System.out.println("main starts...");
+		Employee e1 = new Employee(12, "Raj", 32000.6, 2.4);
+		Employee e2 = new Employee(43, "Rani", 32000.7);
+		e1.displayExpDetails();
+		e2.displayFresherDetails();
+		System.out.println("main ends...");
+	}
+}
+/*
+main starts...
+********************
+Name: Abhi
+tenth percentage: 78.5%
+inter percentage: 56.7%
+degree percentage: 62.3%
+********************
+********************
+Name: Raj
+tenth percentage: 87.4%
+inter percentage: 42.1%
+degree percentage: 83.2%
+********************
+********************
+Name: Vijay
+tenth percentage: 76.3%
+inter percentage: 64.1%
+degree percentage: 76.4%
+masters percentage: 64.3%
+********************
+main ends...
+*/

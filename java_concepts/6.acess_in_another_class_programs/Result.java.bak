@@ -1,0 +1,32 @@
+class Result
+{
+	public static int k =100;
+	public int i=6;
+	public static void test()
+	{
+		System.out.println("test details");
+	}
+	public  void main()
+	{
+		System.out.println("exam details");
+	}
+}
+class MainResult
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		System.out.println(Result.k);
+		Result result = new Result();
+		System.out.println(result.i);
+		Result.test();
+	
+		System.out.println("main ends...");
+	}
+}
+
+/*
+Error: Main method not found in class Demo, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+*/

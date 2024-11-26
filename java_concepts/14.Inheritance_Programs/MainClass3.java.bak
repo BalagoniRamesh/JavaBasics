@@ -1,0 +1,17 @@
+class MainClass3 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		W w1 = new W();
+		w1.print();
+		System.out.println("main ends...");
+	}
+}
+/*
+main starts...
+Super most class var i : 7.6
+Super class var j : 1.2
+Own var k : 21
+main ends...
+*/

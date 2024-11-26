@@ -1,0 +1,36 @@
+class Run2 
+{
+	public void move()
+	{
+		System.out.println("move north");
+	}	
+}
+interface Sample20
+{
+	public void test19();	
+}
+class Demo11 extends Run2 implements Sample20
+{
+	public void test19()
+	{
+		System.out.println("test19 completed");
+	}	
+}
+class MainClass10.1
+{ 	
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		Demo10 rv = new Demo10();
+		rv.cycle();
+		rv.test19();
+		System.out.println("main ends...");
+	}
+}
+
+/*
+main starts...
+cycle 5km
+test19 completed
+main ends...
+*/

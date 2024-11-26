@@ -1,0 +1,18 @@
+class MainClass2 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		N n1 = new N();
+		n1.result();
+		System.out.println("main ends...");
+	}
+}
+
+/*
+main starts...
+i: 25
+j: 6.5
+execute show
+main ends...
+*/

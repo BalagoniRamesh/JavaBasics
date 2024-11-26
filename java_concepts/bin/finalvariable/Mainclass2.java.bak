@@ -1,0 +1,18 @@
+class Mainclass2
+{
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts...");
+		final int z;
+		z=10;
+		System.out.println(z);
+		System.out.println("main ends...");
+	}
+}
+/*
+D:\java_programs\finalvariable\MainClass3.java:8: error: non-static variable z cannot be referenced from a static context
+                System.out.println(z);
+                                   ^
+1 error                        
+*/
